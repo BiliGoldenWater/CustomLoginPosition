@@ -1,0 +1,18 @@
+#Enable fixed login position(true or false)?
+enableFixedLoginPosition: true
+#When player login, tp player to this world.
+loginWorld: world
+#When player login, tp player to this position(x).
+loginPositionX: 0.0
+#When player login, tp player to this position(y).
+loginPositionY: 255.0
+#When player login, tp player to this position(z).
+loginPositionZ: 0.0
+#When player login, turn player to this towards(yaw).
+loginPositionYaw: -180
+#When player login, turn player to this towards(pitch).
+loginPositionPitch: 0
+#Enbale ban world.
+enableBanWorld: false
+#Baned world list:
+banWorld: []

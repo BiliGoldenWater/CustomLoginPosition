@@ -1,0 +1,55 @@
+name: CustomLoginPosition
+version: ${project.version}
+main: io.github.biligoldenwater.customloginposition.CustomLoginPosition
+authors: [Golden_Water]
+description: Allow you to custom a fixed login position.
+commands:
+  customloginposition:
+    usage: /customloginposition help
+    description: Plugin main command
+    aliases:
+      - clp
+      - customlogin
+      - loginposition
+permissions:
+  customloginposition.*:
+    default: false
+    description: All permissions of the plugin.
+    children:
+      customloginposition.bypass.*:
+        default: false
+        description: Bypass all.
+        children:
+          customloginposition.bypass.fixedloginposition:
+            default: false
+            description: Bypass fixed login position.
+          customloginposition.bypass.banworld.*:
+            default: op
+            description: Ignore all ban world.
+      customloginposition.command.*:
+        default: op
+        description: All command permission of the plugin.
+        children:
+          customloginposition.command.help:
+            default: true
+            description: Command /customloginposition help
+          customloginposition.command.setloginposition:
+            default: op
+            description: Command /customloginposition setloginposition
+          customloginposition.command.banworld:
+            default: op
+            description: Command /customloginposition banworld
+          customloginposition.command.banworld.*:
+            default: op
+            description: Command /customloginposition banworld add|remove
+            children:
+              customloginposition.command.banworld.add:
+                default: op
+                description: Command /customloginposition banworld add
+              customloginposition.command.banworld.remove:
+                description: Command /customloginposition banworld remove
+                default: op
+          customloginposition.command.reload:
+            default: op
+            description: Reload config.
+
