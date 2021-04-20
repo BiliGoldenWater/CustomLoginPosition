@@ -12,7 +12,9 @@ loginPositionZ: 0.0
 loginPositionYaw: -180
 #When player login, turn player to this towards(pitch).
 loginPositionPitch: 0
+#Respawn at given login position.
+respawnAtLoginPosition: false
 #Enbale ban world.
 enableBanWorld: false
 #Baned world list:
-banWorld: []
+banWorld: [ ]
