@@ -33,17 +33,12 @@ public class GetLoginPosition {
             return null;
         }
 
-        Location location = player.getLocation();
         double loginX=config.getDouble("loginPositionX"),
                 loginY=config.getDouble("loginPositionY"),
                 loginZ=config.getDouble("loginPositionZ");
         float loginYaw=(float) config.getDouble("loginPositionYaw"),
                 loginPitch=(float) config.getDouble("loginPositionPitch");
         Location loginLocation = new Location(loginWorld,loginX,loginY,loginZ,loginYaw,loginPitch);
-
-        if( location.equals(loginLocation) ){
-            return null;
-        }
 
         for (int i=1;i<=loginLocation.getY();++i){
             if(server.getWorld(worldName).getBlockAt((int)loginLocation.getX(),(int)loginLocation.getY() - i,(int)loginLocation.getZ()).getType() != Material.AIR){
