@@ -1,4 +1,4 @@
-#Enable fixed login position(true or false)?
+#Enable fixed login position?
 enableFixedLoginPosition: true
 #When player login, tp player to this world.
 loginWorld: world
@@ -14,7 +14,7 @@ loginPositionYaw: -180
 loginPositionPitch: 0
 #Respawn at given login position.
 respawnAtLoginPosition: false
-#Enbale ban world.
+#Enable the ban world function?
 enableBanWorld: false
 #Baned world list:
 banWorld: [ ]
